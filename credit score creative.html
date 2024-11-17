@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score Check</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS Styles -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+
+        /* Header Section */
+        .header-section {
+            background: url('file:///C:/Users/SAM_ru/Pictures/20150429160658-website-traffic.jpg') no-repeat center center/cover;
+            color: #413838;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .header-section h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #413838;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1em;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #6b6464;
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background-color: #fff;
+        }
+
+        .features-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .features-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .features-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background-color: #f0f2f5;
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-direction: row; /* Image on the left, text on the right */
+        }
+
+        .benefits-text {
+            flex: 1;
+            text-align: left;
+        }
+
+        .benefits-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            flex: 1;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #835f5f;
+            color: #040404;
+        }
+
+        .cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .cta-section p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section form {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .cta-section input[type="email"] {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .cta-section .cta-button {
+            background-color: #835f5f;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #181818;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 2em;
+            }
+
+            .features-section, .benefits-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header-section">
+        <h1>Fast & Easy Access To Your Credit Score Reports</h1>
+        <p> Credit Scores from ALL 3 Bureaus PLUS Identity Theft Protection.</p>
+        <a href="#" class="cta-button">GET STARTED</a>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="features-text">
+            <h1>Get Informed Today!</h1>
+<br>
+            <p>ClickFreeScore.com is here to give you the tools to a better credit future.<br> Need to check your credit for that new mortgage, employer verification, credit card consolidation, school loans, or rental background checks?</p>
+        </div>
+        <img src="file:///F:/Creative/2352379_Email%20V2_HTML/clickfreescore01.png" alt="Credit Score Illustration">
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <img src="file:///F:/Creative/2352379_Email%20V2_HTML/clickfreescore.png" alt="Benefits Illustration">
+        <div class="benefits-text">
+            <h1>Why Choose Us?</h1>
+<br>
+            <p>Credit Report from all three bureaus, Profiles Refreshed Monthly, 24/7 Access to your credit reports & scores, Get credit alerts quickly, including a credit learning center.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <h2>Access your credit report today</h2>
+        <p>View your full report from all three bureaus and get a complete picture of your credit health.</p>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit" class="cta-button">Get My Score</button>
+        </form>
+        
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>© 2024 ClickFreeScore.com All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
